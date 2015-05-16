@@ -2,25 +2,25 @@
     <string name="app_name">ScientificCalculator</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="action_settings">Settings</string>
-    <string name="number4">4</string>
-    <string name="numberOne">1</string>
     <string name="numberZero">0</string>
-    <string name="decimalButton">.</string>
-    <string name="equalButton">=</string>
-    <string name="plusButton">+</string>
+    <string name="numberOne">1</string>
     <string name="numberTwo">2</string>
     <string name="numberThree">3</string>
-    <string name="subtractButton">-</string>
+    <string name="numberFour">4</string>
     <string name="numberFive">5</string>
     <string name="numberSix">6</string>
-    <string name="multipleButton">x</string>
     <string name="numberSeven">7</string>
     <string name="numberEight">8</string>
-    <string name="numberNIne">9</string>
-    <string name="divideButton">÷</string>
-    <string name="parenthesisButton">( )</string>
-    <string name="percentButton">%</string>
-    <string name="acButton">AC</string>
-    <string name="delButton">del</string>
+    <string name="numberNine">9</string>
+    <string name="divide">÷</string>
+    <string name="multiple">x</string>
+    <string name="decimal">.</string>
+    <string name="equal">=</string>
+    <string name="plus">+</string>
+    <string name="subtract">-</string>
+    <string name="negative">+/-</string>
+    <string name="percent">%</string>
+    <string name="ac">AC</string>
+    <string name="del">del</string>
     <string name="radDegreeToggle">Rad</string>
 </resources>
