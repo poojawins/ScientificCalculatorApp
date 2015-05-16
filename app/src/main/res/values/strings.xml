@@ -19,8 +19,23 @@
     <string name="plus">+</string>
     <string name="subtract">-</string>
     <string name="negative">+/-</string>
+    <string name="closeParenthesis">)</string>
+    <string name="openParenthesis">(</string>
     <string name="percent">%</string>
     <string name="ac">AC</string>
     <string name="del">del</string>
-    <string name="radDegreeToggle">Rad</string>
+    <string name="radToDegree">Rad</string>
+    <string name="pi"> π </string>
+    <string name="x">x!</string>
+    <string name="inverse">INV</string>
+    <string name="ln">ln</string>
+    <string name="e">e</string>
+    <string name="log">log</string>
+    <string name="squareRoot">√</string>
+    <string name="exp">EXP</string>
+    <string name="xy">x^y</string>
+    <string name="sine">sin</string>
+    <string name="cosine">cos</string>
+    <string name="tangent">tan</string>
+    <string name="answer">ANS</string>
 </resources>
