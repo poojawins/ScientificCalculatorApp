@@ -40,7 +40,7 @@
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
            android:id="@+id/acButton"
-           android:text="@string/acButton"
+           android:text="@string/ac"
            android:textStyle="bold"
            android:textSize="20sp"
            android:layout_weight="1"
@@ -50,7 +50,7 @@
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
            android:id="@+id/percentButton"
-           android:text="@string/percentButton"
+           android:text="@string/percent"
            android:textStyle="bold"
            android:textSize="20sp"
            android:layout_weight="1" />
@@ -59,7 +59,7 @@
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
            android:id="@+id/negativeButton"
-           android:text="@string/negativeButton"
+           android:text="@string/negative"
            android:textStyle="bold"
            android:textSize="20sp"
            android:layout_weight="1" />
@@ -68,7 +68,7 @@
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
            android:id="@+id/divideButton"
-           android:text="@string/divideButton"
+           android:text="@string/divide"
            android:textStyle="bold"
            android:textSize="20sp"
            android:layout_weight="1" />
@@ -103,7 +103,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/number9Button"
-            android:text="@string/numberNIne"
+            android:text="@string/numberNine"
             android:textStyle="bold"
             android:textSize="20sp"
             android:layout_weight="1"/>
@@ -113,7 +113,7 @@
             android:layout_height="wrap_content"
             android:textAllCaps="false"
             android:id="@+id/multiplyButton"
-            android:text="@string/multipleButton"
+            android:text="@string/multiple"
             android:textStyle="bold"
             android:textSize="20sp"
             android:layout_weight="1"/>
@@ -156,7 +156,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/subtractButton"
-            android:text="@string/subtractButton"
+            android:text="@string/subtract"
             android:textStyle="bold"
             android:textSize="20sp"
             android:layout_weight="1" />
@@ -200,7 +200,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/plusButton"
-            android:text="@string/plusButton"
+            android:text="@string/plus"
             android:textStyle="bold"
             android:textSize="20sp"
             android:layout_weight="1" />
@@ -224,7 +224,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/decimalButton"
-            android:text="@string/decimalButton"
+            android:text="@string/decimal"
             android:textStyle="bold"
             android:textSize="20sp"
             android:layout_weight="1" />
@@ -233,17 +233,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/backspaceButton"
-            android:text="@string/delButton"
+            android:text="@string/del"
             android:textStyle="bold"
             android:textSize="20sp"
             android:layout_weight="1" />
-
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/equalButton"
-            android:text="@string/equalButton"
+            android:text="@string/equal"
             android:textStyle="bold"
             android:textSize="20sp"
             android:layout_weight="1" />
