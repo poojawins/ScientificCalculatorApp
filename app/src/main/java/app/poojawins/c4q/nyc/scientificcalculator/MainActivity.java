@@ -21,7 +21,7 @@ public class MainActivity extends ActionBarActivity {
     Button percentButton;
     Button negativeButton;
     Button decimalButton;
-    
+
     Button plusButton;
     Button subtractButton;
     Button multiplyButton;
@@ -153,6 +153,19 @@ public class MainActivity extends ActionBarActivity {
             });
         }
 
+        acButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                displayText.setText("");
+            }
+        });
+
+        backspaceButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                displayText.setText(displayText.getText().toString().substring(0, displayText.length() - 1));
+            }
+        });
 
     }
 
