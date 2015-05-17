@@ -8,27 +8,31 @@
     android:orientation="vertical"
     android:clickable="false"
     android:id="@+id/verticalLayout"
-    android:background="#010000fd">
+    android:background="#ff9c27b0"
+    android:focusable="false">
 
    <TableLayout
 
        android:layout_width="match_parent"
        android:layout_height="match_parent"
        android:stretchColumns="4"
-       >
+       android:background="#ff9c27b0">
 
    <TableRow
       android:layout_width="match_parent"
       android:layout_height="match_parent">
 
        <TextView
-           android:layout_height="110dp"
+           android:layout_height="100dp"
            android:layout_width="match_parent"
            android:id="@+id/displayText"
            android:layout_span="4"
-           android:layout_marginTop="3dp"
-           android:layout_marginBottom="5dp"
-           android:layout_weight="1" />
+           android:layout_marginTop="7dp"
+           android:layout_marginBottom="20dp"
+           android:layout_marginRight="7dp"
+           android:layout_marginLeft="7dp"
+           android:layout_weight="1"
+           android:background="#B6B6B6" />
 
    </TableRow>
 
@@ -44,7 +48,7 @@
            android:textStyle="bold"
            android:textSize="20sp"
            android:layout_weight="1"
-           />
+           android:background="#ff03a9f4" />
 
        <Button
            android:layout_width="wrap_content"
@@ -53,7 +57,8 @@
            android:text="@string/percent"
            android:textStyle="bold"
            android:textSize="20sp"
-           android:layout_weight="1" />
+           android:layout_weight="1"
+           android:background="#ff03a9f4" />
 
        <Button
            android:layout_width="wrap_content"
@@ -62,7 +67,8 @@
            android:text="@string/negative"
            android:textStyle="bold"
            android:textSize="20sp"
-           android:layout_weight="1" />
+           android:layout_weight="1"
+           android:background="#ff03a9f4" />
 
        <Button
            android:layout_width="wrap_content"
@@ -71,7 +77,8 @@
            android:text="@string/divide"
            android:textStyle="bold"
            android:textSize="20sp"
-           android:layout_weight="1" />
+           android:layout_weight="1"
+           android:background="#ff03a9f4" />
 
     </TableRow>
 
@@ -86,7 +93,9 @@
             android:text="@string/numberSeven"
             android:textStyle="bold"
             android:textSize="20sp"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:background="#ff727272"
+            android:textColor="#ffffffff" />
 
 
         <Button
@@ -96,7 +105,9 @@
             android:text="@string/numberEight"
             android:textStyle="bold"
             android:textSize="20sp"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:background="#ff727272"
+            android:textColor="#ffffffff" />
 
 
         <Button
@@ -106,7 +117,9 @@
             android:text="@string/numberNine"
             android:textStyle="bold"
             android:textSize="20sp"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:background="#ff727272"
+            android:textColor="#ffffffff" />
 
         <Button
             android:layout_width="wrap_content"
@@ -116,7 +129,8 @@
             android:text="@string/multiple"
             android:textStyle="bold"
             android:textSize="20sp"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:background="#ff03a9f4" />
 
     </TableRow>
 
@@ -131,7 +145,9 @@
             android:text="@string/numberFour"
             android:textStyle="bold"
             android:textSize="20sp"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:background="#ff727272"
+            android:textColor="#ffffffff" />
 
         <Button
             android:layout_width="wrap_content"
@@ -140,7 +156,9 @@
             android:text="@string/numberFive"
             android:textStyle="bold"
             android:textSize="20sp"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:background="#ff727272"
+            android:textColor="#ffffffff" />
 
         <Button
             android:layout_width="wrap_content"
@@ -149,7 +167,9 @@
             android:text="@string/numberSix"
             android:textStyle="bold"
             android:textSize="20sp"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:background="#ff727272"
+            android:textColor="#ffffffff" />
 
 
         <Button
@@ -159,7 +179,8 @@
             android:text="@string/subtract"
             android:textStyle="bold"
             android:textSize="20sp"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:background="#ff03a9f4" />
 
     </TableRow>
 
@@ -174,7 +195,9 @@
             android:text="@string/numberOne"
             android:textStyle="bold"
             android:textSize="20sp"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:background="#ff727272"
+            android:textColor="#ffffffff" />
 
 
         <Button
@@ -184,7 +207,9 @@
             android:text="@string/numberTwo"
             android:textStyle="bold"
             android:textSize="20sp"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:background="#ff727272"
+            android:textColor="#ffffffff" />
 
         <Button
             android:layout_width="wrap_content"
@@ -193,7 +218,9 @@
             android:text="@string/numberThree"
             android:textStyle="bold"
             android:textSize="20sp"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:background="#ff727272"
+            android:textColor="#ffffffff" />
 
 
         <Button
@@ -203,7 +230,8 @@
             android:text="@string/plus"
             android:textStyle="bold"
             android:textSize="20sp"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:background="#ff03a9f4" />
 
     </TableRow>
 
@@ -218,7 +246,9 @@
             android:text="@string/numberZero"
             android:textStyle="bold"
             android:textSize="20sp"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:background="#ff727272"
+            android:textColor="#ffffffff" />
 
         <Button
             android:layout_width="wrap_content"
@@ -227,7 +257,9 @@
             android:text="@string/decimal"
             android:textStyle="bold"
             android:textSize="20sp"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:background="#ff727272"
+            android:textColor="#ffffffff" />
 
         <Button
             android:layout_width="wrap_content"
@@ -236,7 +268,8 @@
             android:text="@string/del"
             android:textStyle="bold"
             android:textSize="20sp"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:background="#ff03a9f4" />
 
         <Button
             android:layout_width="wrap_content"
@@ -245,7 +278,8 @@
             android:text="@string/equal"
             android:textStyle="bold"
             android:textSize="20sp"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:background="#fffdb632" />
 
     </TableRow>
 
