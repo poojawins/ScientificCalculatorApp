@@ -18,7 +18,7 @@
     <string name="equal">=</string>
     <string name="plus">+</string>
     <string name="subtract">-</string>
-    <string name="negative">+/-</string>
+    <string name="negative">-</string>
     <string name="closeParenthesis">)</string>
     <string name="openParenthesis">(</string>
     <string name="percent">%</string>

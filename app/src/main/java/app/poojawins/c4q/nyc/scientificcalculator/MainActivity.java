@@ -7,6 +7,7 @@ import android.view.MenuItem;
 import android.widget.TextView;
 import android.widget.Button;
 import java.util.ArrayList;
+import android.view.View;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -15,11 +16,12 @@ public class MainActivity extends ActionBarActivity {
 
     Button acButton;
     Button backspaceButton;
+    Button equalButton;
+
     Button percentButton;
     Button negativeButton;
     Button decimalButton;
-    Button equalButton;
-
+    
     Button plusButton;
     Button subtractButton;
     Button multiplyButton;
@@ -46,10 +48,11 @@ public class MainActivity extends ActionBarActivity {
 
         acButton = (Button) findViewById(R.id.acButton);
         backspaceButton = (Button) findViewById(R.id.backspaceButton);
+        equalButton = (Button) findViewById(R.id.equalButton);
+
         percentButton = (Button) findViewById(R.id.percentButton);
         negativeButton = (Button) findViewById(R.id.negativeButton);
         decimalButton = (Button) findViewById(R.id.decimalButton);
-        equalButton = (Button) findViewById(R.id.equalButton);
 
         plusButton = (Button) findViewById(R.id.plusButton);
         subtractButton = (Button) findViewById(R.id.subtractButton);
@@ -69,12 +72,9 @@ public class MainActivity extends ActionBarActivity {
 
         ArrayList<Button> buttons = new ArrayList<>();
 
-        buttons.add(acButton);
-        buttons.add(backspaceButton);
         buttons.add(percentButton);
         buttons.add(negativeButton);
         buttons.add(decimalButton);
-        buttons.add(equalButton);
 
         buttons.add(plusButton);
         buttons.add(subtractButton);
@@ -91,6 +91,68 @@ public class MainActivity extends ActionBarActivity {
         buttons.add(number2Button);
         buttons.add(number1Button);
         buttons.add(number0Button);
+
+        for (Button button : buttons) {
+            button.setOnClickListener(new View.OnClickListener(){
+                @Override
+                public void onClick(View view) {
+                    switch (view.getId()) {
+                        case R.id.percentButton:
+                            displayText.append(percentButton.getText());
+                            break;
+                        case R.id.negativeButton:
+                            displayText.append(negativeButton.getText());
+                            break;
+                        case R.id.decimalButton:
+                            displayText.append(decimalButton.getText());
+                            break;
+                        case R.id.plusButton:
+                            displayText.append(plusButton.getText());
+                            break;
+                        case R.id.subtractButton:
+                            displayText.append(subtractButton.getText());
+                            break;
+                        case R.id.multiplyButton:
+                            displayText.append(multiplyButton.getText());
+                            break;
+                        case R.id.divideButton:
+                            displayText.append(divideButton.getText());
+                            break;
+                        case R.id.number9Button:
+                            displayText.append(number9Button.getText());
+                            break;
+                        case R.id.number8Button:
+                            displayText.append(number8Button.getText());
+                            break;
+                        case R.id.number7Button:
+                            displayText.append(number7Button.getText());
+                            break;
+                        case R.id.number6Button:
+                            displayText.append(number6Button.getText());
+                            break;
+                        case R.id.number5Button:
+                            displayText.append(number5Button.getText());
+                            break;
+                        case R.id.number4Button:
+                            displayText.append(number4Button.getText());
+                            break;
+                        case R.id.number3Button:
+                            displayText.append(number3Button.getText());
+                            break;
+                        case R.id.number2Button:
+                            displayText.append(number2Button.getText());
+                            break;
+                        case R.id.number1Button:
+                            displayText.append(number1Button.getText());
+                            break;
+                        case R.id.number0Button:
+                            displayText.append(number0Button.getText());
+                            break;
+                    }
+                }
+            });
+        }
+
 
     }
 
