@@ -167,6 +167,14 @@ public class MainActivity extends ActionBarActivity {
             }
         });
 
+        equalButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String expression = displayText.getText().toString();
+                String result = Parser.parse(expression);
+                displayText.setText(result);
+            }
+        });
     }
 
 
