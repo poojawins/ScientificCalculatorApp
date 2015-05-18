@@ -22,7 +22,7 @@ public class MainActivity extends ActionBarActivity {
     Button negativeButton;
     Button decimalButton;
 
-    Button plusButton;
+    Button addButton;
     Button subtractButton;
     Button multiplyButton;
     Button divideButton;
@@ -71,7 +71,7 @@ public class MainActivity extends ActionBarActivity {
         negativeButton = (Button) findViewById(R.id.negativeButton);
         decimalButton = (Button) findViewById(R.id.decimalButton);
 
-        plusButton = (Button) findViewById(R.id.plusButton);
+        addButton = (Button) findViewById(R.id.addButton);
         subtractButton = (Button) findViewById(R.id.subtractButton);
         multiplyButton = (Button) findViewById(R.id.multiplyButton);
         divideButton = (Button) findViewById(R.id.divideButton);
@@ -111,7 +111,7 @@ public class MainActivity extends ActionBarActivity {
         buttons.add(negativeButton);
         buttons.add(decimalButton);
 
-        buttons.add(plusButton);
+        buttons.add(addButton);
         buttons.add(subtractButton);
         buttons.add(multiplyButton);
         buttons.add(divideButton);
@@ -159,8 +159,8 @@ public class MainActivity extends ActionBarActivity {
                         case R.id.decimalButton:
                             displayText.append(decimalButton.getText());
                             break;
-                        case R.id.plusButton:
-                            displayText.append(plusButton.getText());
+                        case R.id.addButton:
+                            displayText.append(addButton.getText());
                             break;
                         case R.id.subtractButton:
                             displayText.append(subtractButton.getText());

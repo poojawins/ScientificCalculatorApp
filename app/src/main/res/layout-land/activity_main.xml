@@ -218,7 +218,7 @@
                 android:layout_height="wrap_content"
                 android:textAllCaps="false"
                 android:id="@+id/multiplyButton"
-                android:text="@string/multiple"
+                android:text="@string/multiply"
                 android:textStyle="bold"
                 android:textSize="15sp"
                 android:layout_weight="1"/>
@@ -360,8 +360,8 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/plusButton"
-                android:text="@string/plus"
+                android:id="@+id/addButton"
+                android:text="@string/add"
                 android:textStyle="bold"
                 android:textSize="15sp"
                 android:layout_weight="1"/>
