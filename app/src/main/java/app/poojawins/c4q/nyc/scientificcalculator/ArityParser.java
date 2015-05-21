@@ -18,4 +18,5 @@ public class ArityParser implements Parser{
             return "ERROR: " + ex.getMessage();
         }
     }
+
 }

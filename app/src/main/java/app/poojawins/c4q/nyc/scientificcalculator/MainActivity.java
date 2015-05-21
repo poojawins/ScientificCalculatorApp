@@ -11,6 +11,7 @@ import android.view.View;
 
 
 public class MainActivity extends ActionBarActivity {
+    public String lastAnswer = "";
 
     TextView displayText;
 
@@ -258,7 +259,7 @@ public class MainActivity extends ActionBarActivity {
                                 displayText.setText(displayText.getText().toString().substring(0, displayText.length() - 1));
                                 break;
                             case R.id.answerButton:
-                                displayText.append(answerButton.getText());
+                                displayText.append(lastAnswer);
                                 break;
                         }
                     }
@@ -280,6 +281,7 @@ public class MainActivity extends ActionBarActivity {
                 Parser p = new ArityParser();
                 String expression = displayText.getText().toString();
                 String result = p.parse(expression);
+                lastAnswer = result;
                 displayText.setText(result);
             }
         });
