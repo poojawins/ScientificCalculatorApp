@@ -3,7 +3,8 @@
     android:layout_width="match_parent" android:layout_height="match_parent"
     android:orientation="horizontal"
     android:background="#60005f"
-    android:id="@+id/er">
+    android:id="@+id/er"
+    android:clickable="false">
 
     <TableLayout
 
@@ -29,7 +30,11 @@
                 android:textSize="25sp"
                 android:padding="10dp"
                 android:textColor="#ffffffff"
-                android:gravity="center_vertical|end" />
+                android:gravity="center_vertical|end"
+                android:freezesText="true"
+                android:maxLines="1"
+                android:maxLength="30"
+                android:ellipsize="end"/>
         </TableRow>
 
         <TableRow
@@ -45,7 +50,8 @@
                 android:textStyle="bold"
                 android:textSize="15sp"
                 android:layout_weight="1"
-                android:background="@drawable/my_border_special_buttons"/>
+                android:background="@drawable/my_border_special_buttons"
+                android:clickable="false" />
 
             <Button
                 android:layout_width="wrap_content"
@@ -55,7 +61,8 @@
                 android:textStyle="bold"
                 android:textSize="15sp"
                 android:layout_weight="1"
-                android:background="@drawable/my_border_special_buttons"/>
+                android:background="@drawable/my_border_special_buttons"
+                android:clickable="false" />
 
             <Button
                 android:layout_width="wrap_content"
@@ -65,7 +72,8 @@
                 android:textStyle="bold"
                 android:textSize="15sp"
                 android:layout_weight="1"
-                android:background="@drawable/my_border_special_buttons"/>
+                android:background="@drawable/my_border_special_buttons"
+                android:clickable="false" />
 
             <Button
                 android:layout_width="wrap_content"
@@ -75,7 +83,8 @@
                 android:textStyle="bold"
                 android:textSize="15sp"
                 android:layout_weight="1"
-                android:background="@drawable/my_border_special_buttons"/>
+                android:background="@drawable/my_border_special_buttons"
+                android:clickable="false" />
 
             <Button
                 android:layout_width="wrap_content"
@@ -85,7 +94,8 @@
                 android:textStyle="bold"
                 android:textSize="15sp"
                 android:layout_weight="1"
-                android:background="@drawable/my_border_special_buttons"/>
+                android:background="@drawable/my_border_special_buttons"
+                android:clickable="false" />
 
             <Button
                 android:layout_width="wrap_content"
@@ -95,7 +105,8 @@
                 android:textStyle="bold"
                 android:textSize="15sp"
                 android:layout_weight="1"
-                android:background="@drawable/my_border_special_buttons"/>
+                android:background="@drawable/my_border_special_buttons"
+                android:clickable="false" />
 
             <Button
                 android:layout_width="wrap_content"
@@ -105,7 +116,8 @@
                 android:textStyle="bold"
                 android:textSize="15sp"
                 android:layout_weight="1"
-                android:background="@drawable/my_border_special_buttons"/>
+                android:background="@drawable/my_border_special_buttons"
+                android:clickable="false" />
         </TableRow>
 
         <TableRow
