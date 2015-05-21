@@ -137,8 +137,8 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/xButton"
-                android:text="@string/x"
+                android:id="@+id/negativeButton"
+                android:text="@string/negative"
                 android:textAllCaps="false"
                 android:textStyle="bold"
                 android:textSize="15sp"

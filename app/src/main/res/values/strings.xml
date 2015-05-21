@@ -27,7 +27,6 @@
     <string name="radToDegree">Rad</string>
     <string name="degreeToRad">Deg</string>
     <string name="pi"> π </string>
-    <string name="x">x!</string>
     <string name="inverse">1/x</string>
     <string name="ln">ln</string>
     <string name="e">e</string>
