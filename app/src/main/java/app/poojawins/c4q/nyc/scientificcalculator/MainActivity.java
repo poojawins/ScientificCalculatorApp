@@ -39,8 +39,10 @@ public class MainActivity extends ActionBarActivity {
     Button number1Button;
     Button number0Button;
 
-    // scientific calculator specific buttons
+    // basic calculator specific button
     Button backspaceButton;
+
+    // scientific calculator specific buttons
     Button radButton;
     Button degButton;
     Button squareRootButton;
@@ -88,8 +90,10 @@ public class MainActivity extends ActionBarActivity {
         number1Button = (Button) findViewById(R.id.number1Button);
         number0Button = (Button) findViewById(R.id.number0Button);
 
-        // scientific calculator specific buttons
+        // basic calculator specific button
         backspaceButton = (Button) findViewById(R.id.backspaceButton);
+
+        // scientific calculator specific buttons
         radButton = (Button) findViewById(R.id.radButton);
         degButton = (Button) findViewById(R.id.degButton);
         squareRootButton = (Button) findViewById(R.id.squareRootButton);
@@ -221,6 +225,16 @@ public class MainActivity extends ActionBarActivity {
             });
         }
 
+        // only on basic calculator
+        if (backspaceButton != null) {
+            backspaceButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    displayText.setText(displayText.getText().toString().substring(0, displayText.length() - 1));
+                }
+            });
+        }
+
         // scientific calculator specific buttons
         for (Button button : scientificButtons) {
             if (button != null) {
@@ -283,9 +297,6 @@ public class MainActivity extends ActionBarActivity {
                                 break;
                             case R.id.closeParenthesisButton:
                                 displayText.append(closeParenthesisButton.getText());
-                                break;
-                            case R.id.backspaceButton:
-                                displayText.setText(displayText.getText().toString().substring(0, displayText.length() - 1));
                                 break;
                             case R.id.answerButton:
                                 checkEvaluatedState();
