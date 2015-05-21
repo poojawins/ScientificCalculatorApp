@@ -229,10 +229,12 @@ public class MainActivity extends ActionBarActivity {
                     public void onClick(View view) {
                         switch (view.getId()) {
                             case R.id.radButton:
-                                displayText.append(radButton.getText());
+                                checkEvaluatedState();
+                                displayText.append("rad(");
                                 break;
                             case R.id.degButton:
-                                displayText.append(degButton.getText());
+                                checkEvaluatedState();
+                                displayText.append("deg(");
                                 break;
                             case R.id.squareRootButton:
                                 checkEvaluatedState();
