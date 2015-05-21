@@ -15,7 +15,6 @@ public class MainActivity extends ActionBarActivity {
     TextView displayText;
 
     Button acButton;
-    Button backspaceButton;
     Button equalButton;
 
     Button percentButton;
@@ -39,6 +38,7 @@ public class MainActivity extends ActionBarActivity {
     Button number0Button;
 
 //    scientific calculator specific buttons
+    Button backspaceButton;
     Button radButton;
     Button squareRootButton;
     Button xyButton; // (x^y)
@@ -63,7 +63,6 @@ public class MainActivity extends ActionBarActivity {
         displayText = (TextView) findViewById(R.id.displayText);
 
         acButton = (Button) findViewById(R.id.acButton);
-        //backspaceButton = (Button) findViewById(R.id.backspaceButton);
         equalButton = (Button) findViewById(R.id.equalButton);
 
         percentButton = (Button) findViewById(R.id.percentButton);
@@ -87,6 +86,7 @@ public class MainActivity extends ActionBarActivity {
         number0Button = (Button) findViewById(R.id.number0Button);
 
 //        scientific calculator specific buttons
+        backspaceButton = (Button) findViewById(R.id.backspaceButton);
         radButton = (Button) findViewById(R.id.radButton);
         squareRootButton = (Button) findViewById(R.id.squareRootButton);
         xyButton = (Button) findViewById(R.id.xyButton); // (x^y)
@@ -125,22 +125,24 @@ public class MainActivity extends ActionBarActivity {
         buttons.add(number1Button);
         buttons.add(number0Button);
 
-//        scientific calculator specific buttons
-//        buttons.add(radButton);
-//        buttons.add(squareRootButton);
-//        buttons.add(xyButton); // (x^y)
-//        buttons.add(expButton);
-//        buttons.add(lnButton);
-//        buttons.add(eButton);
-//        buttons.add(logButton);
-//        buttons.add(inverseButton);
-//        buttons.add(piButton);
-//        buttons.add(sineButton);
-//        buttons.add(cosineButton);
-//        buttons.add(tangentButton);
-//        buttons.add(openParenthesisButton);
-//        buttons.add(closeParenthesisButton);
-//        buttons.add(answerButton);
+        // scientific calculator specific buttons
+        ArrayList<Button> scientificButtons = new ArrayList<>();
+
+        scientificButtons.add(radButton);
+        scientificButtons.add(squareRootButton);
+        scientificButtons.add(xyButton); // (x^y)
+        scientificButtons.add(expButton);
+        scientificButtons.add(lnButton);
+        scientificButtons.add(eButton);
+        scientificButtons.add(logButton);
+        scientificButtons.add(inverseButton);
+        scientificButtons.add(piButton);
+        scientificButtons.add(sineButton);
+        scientificButtons.add(cosineButton);
+        scientificButtons.add(tangentButton);
+        scientificButtons.add(openParenthesisButton);
+        scientificButtons.add(closeParenthesisButton);
+        scientificButtons.add(answerButton);
 
         for (Button button : buttons) {
             button.setOnClickListener(new View.OnClickListener(){
@@ -198,63 +200,71 @@ public class MainActivity extends ActionBarActivity {
                         case R.id.number0Button:
                             displayText.append(number0Button.getText());
                             break;
-                        // scientific calculator specific buttons
-//                        case R.id.radButton:
-//                            displayText.append(radButton.getText());
-//                            break;
-//                        case R.id.squareRootButton:
-//                            displayText.append("sqrt");
-//                            break;
-//                        case R.id.xyButton: // (x^y)
-//                            displayText.append("^");
-//                            break;
-//                        case R.id.expButton:
-//                            displayText.append(expButton.getText());
-//                            break;
-//                        case R.id.lnButton:
-//                            displayText.append(lnButton.getText());
-//                            break;
-//                        case R.id.eButton:
-//                            displayText.append(eButton.getText());
-//                            break;
-//                        case R.id.logButton:
-//                            displayText.append(logButton.getText());
-//                            break;
-//                        case R.id.inverseButton:
-//                            displayText.append(inverseButton.getText());
-//                            break;
-//                        case R.id.piButton:
-//                            displayText.append("pi");
-//                            break;
-//                        case R.id.sineButton:
-//                            displayText.append(sineButton.getText());
-//                            break;
-//                        case R.id.cosineButton:
-//                            displayText.append(cosineButton.getText());
-//                            break;
-//                        case R.id.tangentButton:
-//                            displayText.append(tangentButton.getText());
-//                            break;
-//                        case R.id.openParenthesisButton:
-//                            displayText.append(openParenthesisButton.getText());
-//                            break;
-//                        case R.id.closeParenthesisButton:
-//                            displayText.append(closeParenthesisButton.getText());
-//                            break;
-//                      case R.id.answerButton:
-//                          displayText.append(answerButton.getText());
-//                          break;
                     }
                 }
             });
         }
 
-//        backspaceButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                displayText.setText(displayText.getText().toString().substring(0, displayText.length() - 1));
-//            }
-//        });
+        // scientific calculator specific buttons
+        for (Button button : scientificButtons) {
+            if (button != null) {
+                button.setOnClickListener(new View.OnClickListener(){
+                    @Override
+                    public void onClick(View view) {
+                        switch (view.getId()) {
+                            case R.id.radButton:
+                                displayText.append(radButton.getText());
+                                break;
+                            case R.id.squareRootButton:
+                                displayText.append("sqrt");
+                                break;
+                            case R.id.xyButton: // (x^y)
+                                displayText.append("^");
+                                break;
+                            case R.id.expButton:
+                                displayText.append(expButton.getText());
+                                break;
+                            case R.id.lnButton:
+                                displayText.append(lnButton.getText());
+                                break;
+                            case R.id.eButton:
+                                displayText.append(eButton.getText());
+                                break;
+                            case R.id.logButton:
+                                displayText.append(logButton.getText());
+                                break;
+                            case R.id.inverseButton:
+                                displayText.append(inverseButton.getText());
+                                break;
+                            case R.id.piButton:
+                                displayText.append("pi");
+                                break;
+                            case R.id.sineButton:
+                                displayText.append(sineButton.getText());
+                                break;
+                            case R.id.cosineButton:
+                                displayText.append(cosineButton.getText());
+                                break;
+                            case R.id.tangentButton:
+                                displayText.append(tangentButton.getText());
+                                break;
+                            case R.id.openParenthesisButton:
+                                displayText.append(openParenthesisButton.getText());
+                                break;
+                            case R.id.closeParenthesisButton:
+                                displayText.append(closeParenthesisButton.getText());
+                                break;
+                            case R.id.backspaceButton:
+                                displayText.setText(displayText.getText().toString().substring(0, displayText.length() - 1));
+                                break;
+                            case R.id.answerButton:
+                                displayText.append(answerButton.getText());
+                                break;
+                        }
+                    }
+                });
+            }
+        }
 
         acButton.setOnClickListener(new View.OnClickListener() {
             @Override
