@@ -39,21 +39,21 @@ public class MainActivity extends ActionBarActivity {
     Button number0Button;
 
 //    scientific calculator specific buttons
-//    Button radButton;
-//    Button squareRootButton;
-//    Button xyButton; // (x^y)
-//    Button expButton;
-//    Button lnButton;
-//    Button eButton;
-//    Button logButton;
-//    Button xButton; // (factorial)
-//    Button inverseButton;
-//    Button piButton;
-//    Button sineButton;
-//    Button cosineButton;
-//    Button tangentButton;
-//    Button openParenthesisButton;
-//    Button closeParenthesisButton;
+    Button radButton;
+    Button squareRootButton;
+    Button xyButton; // (x^y)
+    Button expButton;
+    Button lnButton;
+    Button eButton;
+    Button logButton;
+    Button xButton; // (factorial)
+    Button inverseButton;
+    Button piButton;
+    Button sineButton;
+    Button cosineButton;
+    Button tangentButton;
+    Button openParenthesisButton;
+    Button closeParenthesisButton;
 //    Button answerButton;
 
     @Override
@@ -88,21 +88,21 @@ public class MainActivity extends ActionBarActivity {
         number0Button = (Button) findViewById(R.id.number0Button);
 
 //        scientific calculator specific buttons
-//        radButton = (Button) findViewById(R.id.radButton);
-//        squareRootButton = (Button) findViewById(R.id.squareRootButton);
-//        xyButton = (Button) findViewById(R.id.xyButton); // (x^y)
-//        expButton = (Button) findViewById(R.id.expButton);
-//        lnButton = (Button) findViewById(R.id.lnButton);
-//        eButton = (Button) findViewById(R.id.eButton);
-//        logButton = (Button) findViewById(R.id.logButton);
-//        xButton = (Button) findViewById(R.id.xButton); // (factorial)
-//        inverseButton = (Button) findViewById(R.id.inverseButton);
-//        piButton = (Button) findViewById(R.id.piButton);
-//        sineButton = (Button) findViewById(R.id.sineButton);
-//        cosineButton = (Button) findViewById(R.id.cosineButton);
-//        tangentButton = (Button) findViewById(R.id.tangentButton);
-//        openParenthesisButton = (Button) findViewById(R.id.openParenthesisButton);
-//        closeParenthesisButton = (Button) findViewById(R.id.closeParenthesisButton);
+        radButton = (Button) findViewById(R.id.radButton);
+        squareRootButton = (Button) findViewById(R.id.squareRootButton);
+        xyButton = (Button) findViewById(R.id.xyButton); // (x^y)
+        expButton = (Button) findViewById(R.id.expButton);
+        lnButton = (Button) findViewById(R.id.lnButton);
+        eButton = (Button) findViewById(R.id.eButton);
+        logButton = (Button) findViewById(R.id.logButton);
+        xButton = (Button) findViewById(R.id.xButton); // (factorial)
+        inverseButton = (Button) findViewById(R.id.inverseButton);
+        piButton = (Button) findViewById(R.id.piButton);
+        sineButton = (Button) findViewById(R.id.sineButton);
+        cosineButton = (Button) findViewById(R.id.cosineButton);
+        tangentButton = (Button) findViewById(R.id.tangentButton);
+        openParenthesisButton = (Button) findViewById(R.id.openParenthesisButton);
+        closeParenthesisButton = (Button) findViewById(R.id.closeParenthesisButton);
 //        answerButton = (Button) findViewByID(R.id.answerButton);
 
         ArrayList<Button> buttons = new ArrayList<>();
@@ -128,21 +128,21 @@ public class MainActivity extends ActionBarActivity {
         buttons.add(number0Button);
 
 //        scientific calculator specific buttons
-//        buttons.add(radButton);
-//        buttons.add(squareRootButton);
-//        buttons.add(xyButton); // (x^y)
-//        buttons.add(expButton);
-//        buttons.add(lnButton);
-//        buttons.add(eButton);
-//        buttons.add(logButton);
-//        buttons.add(xButton); // (factorial)
-//        buttons.add(inverseButton);
-//        buttons.add(piButton);
-//        buttons.add(sineButton);
-//        buttons.add(cosineButton);
-//        buttons.add(tangentButton);
-//        buttons.add(openParenthesisButton);
-//        buttons.add(closeParenthesisButton);
+        buttons.add(radButton);
+        buttons.add(squareRootButton);
+        buttons.add(xyButton); // (x^y)
+        buttons.add(expButton);
+        buttons.add(lnButton);
+        buttons.add(eButton);
+        buttons.add(logButton);
+        buttons.add(xButton); // (factorial)
+        buttons.add(inverseButton);
+        buttons.add(piButton);
+        buttons.add(sineButton);
+        buttons.add(cosineButton);
+        buttons.add(tangentButton);
+        buttons.add(openParenthesisButton);
+        buttons.add(closeParenthesisButton);
 //        buttons.add(answerButton);
 
         for (Button button : buttons) {
@@ -202,51 +202,51 @@ public class MainActivity extends ActionBarActivity {
                             displayText.append(number0Button.getText());
                             break;
                         // scientific calculator specific buttons
-//                        case R.id.radButton:
-//                            displayText.append(radButton.getText());
-//                            break;
-//                        case R.id.squareRootButton:
-//                            displayText.append(squareRootButton.getText());
-//                            break;
-//                        case R.id.xyButton: // (x^y)
-//                            displayText.append(xyButton.getText());
-//                            break;
-//                        case R.id.expButton:
-//                            displayText.append(expButton.getText());
-//                            break;
-//                        case R.id.lnButton:
-//                            displayText.append(lnButton.getText());
-//                            break;
-//                        case R.id.eButton:
-//                            displayText.append(eButton.getText());
-//                            break;
-//                        case R.id.logButton:
-//                            displayText.append(logButton.getText());
-//                            break;
-//                        case R.id.xButton: // (factorial)
-//                            displayText.append(lnButton.getText());
-//                            break;
-//                        case R.id.inverseButton:
-//                            displayText.append(inverseButton.getText());
-//                            break;
-//                        case R.id.piButton:
-//                            displayText.append(piButton.getText());
-//                            break;
-//                        case R.id.sineButton:
-//                            displayText.append(sineButton.getText());
-//                            break;
-//                        case R.id.cosineButton:
-//                            displayText.append(cosineButton.getText());
-//                            break;
-//                        case R.id.tangentButton:
-//                            displayText.append(tangentButton.getText());
-//                            break;
-//                        case R.id.openParenthesisButton:
-//                            displayText.append(openParenthesisButton.getText());
-//                            break;
-//                        case R.id.closeParenthesisButton:
-//                            displayText.append(closeParenthesisButton.getText());
-//                            break;
+                        case R.id.radButton:
+                            displayText.append(radButton.getText());
+                            break;
+                        case R.id.squareRootButton:
+                            displayText.append("sqrt");
+                            break;
+                        case R.id.xyButton: // (x^y)
+                            displayText.append("^");
+                            break;
+                        case R.id.expButton:
+                            displayText.append(expButton.getText());
+                            break;
+                        case R.id.lnButton:
+                            displayText.append(lnButton.getText());
+                            break;
+                        case R.id.eButton:
+                            displayText.append(eButton.getText());
+                            break;
+                        case R.id.logButton:
+                            displayText.append(logButton.getText());
+                            break;
+                        case R.id.xButton: // (factorial)
+                            displayText.append(lnButton.getText());
+                            break;
+                        case R.id.inverseButton:
+                            displayText.append(inverseButton.getText());
+                            break;
+                        case R.id.piButton:
+                            displayText.append("pi");
+                            break;
+                        case R.id.sineButton:
+                            displayText.append(sineButton.getText());
+                            break;
+                        case R.id.cosineButton:
+                            displayText.append(cosineButton.getText());
+                            break;
+                        case R.id.tangentButton:
+                            displayText.append(tangentButton.getText());
+                            break;
+                        case R.id.openParenthesisButton:
+                            displayText.append(openParenthesisButton.getText());
+                            break;
+                        case R.id.closeParenthesisButton:
+                            displayText.append(closeParenthesisButton.getText());
+                            break;
 //                      case R.id.answerButton:
 //                          displayText.append(answerButton.getText());
 //                          break;
