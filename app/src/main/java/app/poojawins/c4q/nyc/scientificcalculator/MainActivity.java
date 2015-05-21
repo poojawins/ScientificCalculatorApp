@@ -154,7 +154,7 @@ public class MainActivity extends ActionBarActivity {
                             displayText.append(percentButton.getText());
                             break;
                         case R.id.negativeButton:
-                            displayText.append(negativeButton.getText());
+                            displayText.append("-");
                             break;
                         case R.id.decimalButton:
                             displayText.append(decimalButton.getText());
@@ -166,10 +166,10 @@ public class MainActivity extends ActionBarActivity {
                             displayText.append(subtractButton.getText());
                             break;
                         case R.id.multiplyButton:
-                            displayText.append(multiplyButton.getText());
+                            displayText.append("*");
                             break;
                         case R.id.divideButton:
-                            displayText.append(divideButton.getText());
+                            displayText.append("/");
                             break;
                         case R.id.number9Button:
                             displayText.append(number9Button.getText());
