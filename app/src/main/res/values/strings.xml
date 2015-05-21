@@ -24,8 +24,8 @@
     <string name="percent">%</string>
     <string name="ac">AC</string>
     <string name="del">del</string>
-    <string name="radToDegree">Rad</string>
-    <string name="degreeToRad">Deg</string>
+    <string name="rad">Rad</string>
+    <string name="deg">Deg</string>
     <string name="pi"> π </string>
     <string name="inverse">1/x</string>
     <string name="ln">ln</string>

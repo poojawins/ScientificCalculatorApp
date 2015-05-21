@@ -42,6 +42,7 @@ public class MainActivity extends ActionBarActivity {
 //    scientific calculator specific buttons
     Button backspaceButton;
     Button radButton;
+    Button degButton;
     Button squareRootButton;
     Button xyButton; // (x^y)
     Button expButton;
@@ -90,6 +91,7 @@ public class MainActivity extends ActionBarActivity {
 //        scientific calculator specific buttons
         backspaceButton = (Button) findViewById(R.id.backspaceButton);
         radButton = (Button) findViewById(R.id.radButton);
+        degButton = (Button) findViewById(R.id.degButton);
         squareRootButton = (Button) findViewById(R.id.squareRootButton);
         xyButton = (Button) findViewById(R.id.xyButton); // (x^y)
         expButton = (Button) findViewById(R.id.expButton);
@@ -131,6 +133,7 @@ public class MainActivity extends ActionBarActivity {
         ArrayList<Button> scientificButtons = new ArrayList<Button>();
 
         scientificButtons.add(radButton);
+        scientificButtons.add(degButton);
         scientificButtons.add(squareRootButton);
         scientificButtons.add(xyButton); // (x^y)
         scientificButtons.add(expButton);
@@ -227,6 +230,9 @@ public class MainActivity extends ActionBarActivity {
                         switch (view.getId()) {
                             case R.id.radButton:
                                 displayText.append(radButton.getText());
+                                break;
+                            case R.id.degButton:
+                                displayText.append(degButton.getText());
                                 break;
                             case R.id.squareRootButton:
                                 checkEvaluatedState();
