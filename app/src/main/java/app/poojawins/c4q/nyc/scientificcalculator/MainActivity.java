@@ -39,7 +39,7 @@ public class MainActivity extends ActionBarActivity {
     Button number1Button;
     Button number0Button;
 
-//    scientific calculator specific buttons
+    // scientific calculator specific buttons
     Button backspaceButton;
     Button radButton;
     Button degButton;
@@ -88,7 +88,7 @@ public class MainActivity extends ActionBarActivity {
         number1Button = (Button) findViewById(R.id.number1Button);
         number0Button = (Button) findViewById(R.id.number0Button);
 
-//        scientific calculator specific buttons
+        // scientific calculator specific buttons
         backspaceButton = (Button) findViewById(R.id.backspaceButton);
         radButton = (Button) findViewById(R.id.radButton);
         degButton = (Button) findViewById(R.id.degButton);
@@ -307,7 +307,7 @@ public class MainActivity extends ActionBarActivity {
         equalButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                Parser p = new JavaluatorParser();
+                // Parser p = new JavaluatorParser();
                 Parser p = new ArityParser();
                 String expression = displayText.getText().toString();
                 String result = p.parse(expression);
@@ -347,4 +347,5 @@ public class MainActivity extends ActionBarActivity {
             justEvaluated = false;
         }
     }
+
 }
