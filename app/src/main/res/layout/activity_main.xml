@@ -8,37 +8,43 @@
     android:orientation="vertical"
     android:clickable="false"
     android:id="@+id/verticalLayout"
-    android:background="#ff9c27b0"
-    android:focusable="false">
+    android:background="#60005f">
 
    <TableLayout
-
        android:layout_width="match_parent"
        android:layout_height="match_parent"
        android:stretchColumns="4"
-       android:background="#ff9c27b0">
+       android:background="#60005f"
+       >
 
    <TableRow
       android:layout_width="match_parent"
-      android:layout_height="match_parent">
+      android:layout_height="match_parent"
+      android:layout_weight="1">
 
        <TextView
-           android:layout_height="100dp"
+           android:layout_height="110dp"
            android:layout_width="match_parent"
            android:id="@+id/displayText"
            android:layout_span="4"
            android:layout_marginTop="7dp"
            android:layout_marginBottom="20dp"
-           android:layout_marginRight="7dp"
-           android:layout_marginLeft="7dp"
+           android:layout_marginRight="3dp"
+           android:layout_marginLeft="3dp"
            android:layout_weight="1"
-           android:background="#B6B6B6" />
+           android:background="@drawable/my_border_text"
+           android:textColor="#ffffffff"
+           android:textSize="30sp"
+           android:gravity="center_vertical|end"
+           android:padding="10dp"
+           android:singleLine="false" />
 
    </TableRow>
 
    <TableRow
        android:layout_width="match_parent"
-       android:layout_height="match_parent">
+       android:layout_height="match_parent"
+       android:layout_weight="1">
 
        <Button
            android:layout_width="wrap_content"
@@ -47,8 +53,9 @@
            android:text="@string/ac"
            android:textStyle="bold"
            android:textSize="20sp"
+           android:textColor="#ffffffff"
            android:layout_weight="1"
-           android:background="#ff03a9f4" />
+           android:background="@drawable/my_border_special_buttons" />
 
        <Button
            android:layout_width="wrap_content"
@@ -57,8 +64,9 @@
            android:text="@string/percent"
            android:textStyle="bold"
            android:textSize="20sp"
+           android:textColor="#ffffffff"
            android:layout_weight="1"
-           android:background="#ff03a9f4" />
+           android:background="@drawable/my_border_operators" />
 
        <Button
            android:layout_width="wrap_content"
@@ -67,8 +75,9 @@
            android:text="@string/negative"
            android:textStyle="bold"
            android:textSize="20sp"
+           android:textColor="#ffffffff"
            android:layout_weight="1"
-           android:background="#ff03a9f4" />
+           android:background="@drawable/my_border_operators" />
 
        <Button
            android:layout_width="wrap_content"
@@ -77,14 +86,16 @@
            android:text="@string/divide"
            android:textStyle="bold"
            android:textSize="20sp"
+           android:textColor="#ffffffff"
            android:layout_weight="1"
-           android:background="#ff03a9f4" />
+           android:background="@drawable/my_border_operators" />
 
     </TableRow>
 
     <TableRow
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_weight="1">
 
         <Button
             android:layout_width="wrap_content"
@@ -94,9 +105,8 @@
             android:textStyle="bold"
             android:textSize="20sp"
             android:layout_weight="1"
-            android:background="#ff727272"
+            android:background="@drawable/my_shape"
             android:textColor="#ffffffff" />
-
 
         <Button
             android:layout_width="wrap_content"
@@ -106,9 +116,8 @@
             android:textStyle="bold"
             android:textSize="20sp"
             android:layout_weight="1"
-            android:background="#ff727272"
+            android:background="@drawable/my_shape"
             android:textColor="#ffffffff" />
-
 
         <Button
             android:layout_width="wrap_content"
@@ -118,7 +127,7 @@
             android:textStyle="bold"
             android:textSize="20sp"
             android:layout_weight="1"
-            android:background="#ff727272"
+            android:background="@drawable/my_shape"
             android:textColor="#ffffffff" />
 
         <Button
@@ -129,14 +138,16 @@
             android:text="@string/multiple"
             android:textStyle="bold"
             android:textSize="20sp"
+            android:textColor="#ffffffff"
             android:layout_weight="1"
-            android:background="#ff03a9f4" />
+            android:background="@drawable/my_border_operators" />
 
     </TableRow>
 
     <TableRow
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_weight="1">
 
         <Button
             android:layout_width="wrap_content"
@@ -146,7 +157,7 @@
             android:textStyle="bold"
             android:textSize="20sp"
             android:layout_weight="1"
-            android:background="#ff727272"
+            android:background="@drawable/my_shape"
             android:textColor="#ffffffff" />
 
         <Button
@@ -157,7 +168,7 @@
             android:textStyle="bold"
             android:textSize="20sp"
             android:layout_weight="1"
-            android:background="#ff727272"
+            android:background="@drawable/my_shape"
             android:textColor="#ffffffff" />
 
         <Button
@@ -168,9 +179,8 @@
             android:textStyle="bold"
             android:textSize="20sp"
             android:layout_weight="1"
-            android:background="#ff727272"
+            android:background="@drawable/my_shape"
             android:textColor="#ffffffff" />
-
 
         <Button
             android:layout_width="wrap_content"
@@ -179,14 +189,16 @@
             android:text="@string/subtract"
             android:textStyle="bold"
             android:textSize="20sp"
+            android:textColor="#ffffffff"
             android:layout_weight="1"
-            android:background="#ff03a9f4" />
+            android:background="@drawable/my_border_operators" />
 
     </TableRow>
 
     <TableRow
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_weight="1">
 
         <Button
             android:layout_width="wrap_content"
@@ -196,9 +208,8 @@
             android:textStyle="bold"
             android:textSize="20sp"
             android:layout_weight="1"
-            android:background="#ff727272"
+            android:background="@drawable/my_shape"
             android:textColor="#ffffffff" />
-
 
         <Button
             android:layout_width="wrap_content"
@@ -208,7 +219,7 @@
             android:textStyle="bold"
             android:textSize="20sp"
             android:layout_weight="1"
-            android:background="#ff727272"
+            android:background="@drawable/my_shape"
             android:textColor="#ffffffff" />
 
         <Button
@@ -219,9 +230,8 @@
             android:textStyle="bold"
             android:textSize="20sp"
             android:layout_weight="1"
-            android:background="#ff727272"
+            android:background="@drawable/my_shape"
             android:textColor="#ffffffff" />
-
 
         <Button
             android:layout_width="wrap_content"
@@ -230,14 +240,16 @@
             android:text="@string/plus"
             android:textStyle="bold"
             android:textSize="20sp"
+            android:textColor="#ffffffff"
             android:layout_weight="1"
-            android:background="#ff03a9f4" />
+            android:background="@drawable/my_border_operators" />
 
     </TableRow>
 
     <TableRow
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_weight="1">
 
         <Button
             android:layout_width="wrap_content"
@@ -247,7 +259,7 @@
             android:textStyle="bold"
             android:textSize="20sp"
             android:layout_weight="1"
-            android:background="#ff727272"
+            android:background="@drawable/my_shape"
             android:textColor="#ffffffff" />
 
         <Button
@@ -258,7 +270,7 @@
             android:textStyle="bold"
             android:textSize="20sp"
             android:layout_weight="1"
-            android:background="#ff727272"
+            android:background="@drawable/my_shape"
             android:textColor="#ffffffff" />
 
         <Button
@@ -268,8 +280,9 @@
             android:text="@string/del"
             android:textStyle="bold"
             android:textSize="20sp"
+            android:textColor="#ffffffff"
             android:layout_weight="1"
-            android:background="#ff03a9f4" />
+            android:background="@drawable/my_border_special_buttons" />
 
         <Button
             android:layout_width="wrap_content"
@@ -278,8 +291,9 @@
             android:text="@string/equal"
             android:textStyle="bold"
             android:textSize="20sp"
+            android:textColor="#ffffffff"
             android:layout_weight="1"
-            android:background="#fffdb632" />
+            android:background="@drawable/my_border_special_buttons" />
 
     </TableRow>
 
