@@ -37,7 +37,11 @@
            android:textSize="30sp"
            android:gravity="center_vertical|end"
            android:padding="10dp"
-           android:singleLine="false" />
+           android:singleLine="false"
+           android:freezesText="true"
+           android:maxLines="1"
+           android:maxLength="25"
+           android:ellipsize="end"/>
 
    </TableRow>
 
