@@ -1,41 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent"
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+    android:background="#60005f"
+    android:id="@+id/er">
 
     <TableLayout
 
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:stretchColumns="7">
+        android:stretchColumns="7"
+        android:background="#60005f">
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_weight="1">
 
             <TextView
                 android:layout_height="60dp"
                 android:layout_width="match_parent"
                 android:id="@+id/displayText"
                 android:layout_span="7"
-                android:layout_marginTop="3dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginBottom="3dp"
-                android:layout_weight="1"/>
-
+                android:layout_weight="1"
+                android:background="@drawable/my_border_text"
+                android:textSize="25sp"
+                android:padding="10dp"
+                android:textColor="#ffffffff"
+                android:gravity="center_vertical|end" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_weight="1">
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/radButton"
+                android:text="@string/degreeToRad"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_weight="1"
+                android:background="@drawable/my_border_special_buttons"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/degreeButton"
                 android:text="@string/radToDegree"
                 android:textStyle="bold"
                 android:textSize="15sp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:background="@drawable/my_border_special_buttons"/>
 
             <Button
                 android:layout_width="wrap_content"
@@ -44,7 +64,8 @@
                 android:text="@string/squareRoot"
                 android:textStyle="bold"
                 android:textSize="15sp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:background="@drawable/my_border_special_buttons"/>
 
             <Button
                 android:layout_width="wrap_content"
@@ -53,7 +74,8 @@
                 android:text="@string/percent"
                 android:textStyle="bold"
                 android:textSize="15sp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:background="@drawable/my_border_special_buttons"/>
 
             <Button
                 android:layout_width="wrap_content"
@@ -62,7 +84,8 @@
                 android:text="@string/openParenthesis"
                 android:textStyle="bold"
                 android:textSize="15sp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:background="@drawable/my_border_special_buttons"/>
 
             <Button
                 android:layout_width="wrap_content"
@@ -70,7 +93,9 @@
                 android:id="@+id/closeParenthesisButton"
                 android:text="@string/closeParenthesis"
                 android:textStyle="bold"
-                android:textSize="15sp"/>
+                android:textSize="15sp"
+                android:layout_weight="1"
+                android:background="@drawable/my_border_special_buttons"/>
 
             <Button
                 android:layout_width="wrap_content"
@@ -79,13 +104,14 @@
                 android:text="@string/ac"
                 android:textStyle="bold"
                 android:textSize="15sp"
-                android:layout_weight="1"/>
-
+                android:layout_weight="1"
+                android:background="@drawable/my_border_special_buttons"/>
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_weight="1">
 
             <Button
                 android:layout_width="wrap_content"
@@ -94,7 +120,8 @@
                 android:text="@string/pi"
                 android:textStyle="bold"
                 android:textSize="15sp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:background="@drawable/my_border_extra_buttons"/>
 
             <Button
                 android:layout_width="wrap_content"
@@ -104,7 +131,8 @@
                 android:textAllCaps="false"
                 android:textStyle="bold"
                 android:textSize="15sp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:background="@drawable/my_border_extra_buttons"/>
 
             <Button
                 android:layout_width="wrap_content"
@@ -114,7 +142,8 @@
                 android:textAllCaps="false"
                 android:textStyle="bold"
                 android:textSize="15sp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:background="@drawable/my_border_extra_buttons"/>
 
             <Button
                 android:layout_width="wrap_content"
@@ -123,7 +152,8 @@
                 android:text="@string/numberSeven"
                 android:textStyle="bold"
                 android:textSize="20sp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:background="@drawable/my_shape"/>
 
             <Button
                 android:layout_width="wrap_content"
@@ -132,7 +162,8 @@
                 android:text="@string/numberEight"
                 android:textStyle="bold"
                 android:textSize="20sp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:background="@drawable/my_shape"/>
 
             <Button
                 android:layout_width="wrap_content"
@@ -141,7 +172,8 @@
                 android:text="@string/numberNine"
                 android:textStyle="bold"
                 android:textSize="20sp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:background="@drawable/my_shape"/>
 
             <Button
                 android:layout_width="wrap_content"
@@ -150,13 +182,14 @@
                 android:text="@string/divide"
                 android:textStyle="bold"
                 android:textSize="15sp"
-                android:layout_weight="1"/>
-
+                android:layout_weight="1"
+                android:background="@drawable/my_border_operators"/>
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_weight="1">
 
             <Button
                 android:layout_width="wrap_content"
@@ -165,7 +198,8 @@
                 android:text="@string/inverse"
                 android:textStyle="bold"
                 android:textSize="15sp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:background="@drawable/my_border_extra_buttons"/>
 
             <Button
                 android:layout_width="wrap_content"
@@ -175,7 +209,8 @@
                 android:textAllCaps="false"
                 android:textStyle="bold"
                 android:textSize="15sp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:background="@drawable/my_border_extra_buttons"/>
 
             <Button
                 android:layout_width="wrap_content"
@@ -185,7 +220,8 @@
                 android:textAllCaps="false"
                 android:textStyle="bold"
                 android:textSize="15sp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:background="@drawable/my_border_extra_buttons"/>
 
             <Button
                 android:layout_width="wrap_content"
@@ -194,7 +230,8 @@
                 android:text="@string/numberFour"
                 android:textStyle="bold"
                 android:textSize="20sp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:background="@drawable/my_shape"/>
 
             <Button
                 android:layout_width="wrap_content"
@@ -203,7 +240,8 @@
                 android:text="@string/numberFive"
                 android:textStyle="bold"
                 android:textSize="20sp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:background="@drawable/my_shape"/>
 
             <Button
                 android:layout_width="wrap_content"
@@ -212,7 +250,9 @@
                 android:text="@string/numberSix"
                 android:textStyle="bold"
                 android:textSize="20sp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:background="@drawable/my_shape"/>
+
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -221,13 +261,14 @@
                 android:text="@string/multiple"
                 android:textStyle="bold"
                 android:textSize="15sp"
-                android:layout_weight="1"/>
-
+                android:layout_weight="1"
+                android:background="@drawable/my_border_operators"/>
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_weight="1">
 
             <Button
                 android:layout_width="wrap_content"
@@ -237,7 +278,8 @@
                 android:textAllCaps="false"
                 android:textStyle="bold"
                 android:textSize="15sp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:background="@drawable/my_border_extra_buttons"/>
 
             <Button
                 android:layout_width="wrap_content"
@@ -247,7 +289,8 @@
                 android:textAllCaps="false"
                 android:textStyle="bold"
                 android:textSize="15sp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:background="@drawable/my_border_extra_buttons"/>
 
             <Button
                 android:layout_width="wrap_content"
@@ -257,7 +300,8 @@
                 android:textAllCaps="false"
                 android:textStyle="bold"
                 android:textSize="15sp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:background="@drawable/my_border_extra_buttons"/>
 
             <Button
                 android:layout_width="wrap_content"
@@ -266,7 +310,8 @@
                 android:text="@string/numberOne"
                 android:textStyle="bold"
                 android:textSize="20sp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:background="@drawable/my_shape"/>
 
             <Button
                 android:layout_width="wrap_content"
@@ -275,7 +320,8 @@
                 android:text="@string/numberTwo"
                 android:textStyle="bold"
                 android:textSize="20sp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:background="@drawable/my_shape"/>
 
             <Button
                 android:layout_width="wrap_content"
@@ -284,7 +330,9 @@
                 android:text="@string/numberThree"
                 android:textStyle="bold"
                 android:textSize="20sp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:background="@drawable/my_shape"/>
+
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -292,13 +340,14 @@
                 android:text="@string/subtract"
                 android:textStyle="bold"
                 android:textSize="15sp"
-                android:layout_weight="1"/>
-
+                android:layout_weight="1"
+                android:background="@drawable/my_border_operators"/>
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_weight="1">
 
             <Button
                 android:layout_width="wrap_content"
@@ -308,7 +357,8 @@
                 android:textAllCaps="false"
                 android:textStyle="bold"
                 android:textSize="15sp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:background="@drawable/my_border_extra_buttons"/>
 
             <Button
                 android:layout_width="wrap_content"
@@ -318,7 +368,8 @@
                 android:textAllCaps="false"
                 android:textStyle="bold"
                 android:textSize="15sp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:background="@drawable/my_border_extra_buttons"/>
 
             <Button
                 android:layout_width="wrap_content"
@@ -328,7 +379,8 @@
                 android:textAllCaps="false"
                 android:textStyle="bold"
                 android:textSize="15sp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:background="@drawable/my_border_extra_buttons"/>
 
             <Button
                 android:layout_width="wrap_content"
@@ -337,7 +389,8 @@
                 android:text="@string/numberZero"
                 android:textStyle="bold"
                 android:textSize="20sp"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:background="@drawable/my_shape" />
 
             <Button
                 android:layout_width="wrap_content"
@@ -345,8 +398,9 @@
                 android:id="@+id/decimalButton"
                 android:text="@string/decimal"
                 android:textStyle="bold"
-                android:textSize="15sp"
-                android:layout_weight="1"/>
+                android:textSize="18sp"
+                android:layout_weight="1"
+                android:background="@drawable/my_shape"/>
 
             <Button
                 android:layout_width="wrap_content"
@@ -355,7 +409,8 @@
                 android:text="@string/equal"
                 android:textStyle="bold"
                 android:textSize="20sp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:background="@drawable/my_border_operators"/>
 
             <Button
                 android:layout_width="wrap_content"
@@ -364,8 +419,8 @@
                 android:text="@string/plus"
                 android:textStyle="bold"
                 android:textSize="15sp"
-                android:layout_weight="1"/>
-
+                android:layout_weight="1"
+                android:background="@drawable/my_border_operators"/>
         </TableRow>
 
     </TableLayout>
