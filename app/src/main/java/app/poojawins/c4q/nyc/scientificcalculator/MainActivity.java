@@ -12,6 +12,7 @@ import android.view.View;
 
 public class MainActivity extends ActionBarActivity {
     public String lastAnswer = "";
+    public boolean justEvaluated = false;
 
     TextView displayText;
 
@@ -157,6 +158,7 @@ public class MainActivity extends ActionBarActivity {
                             displayText.append(factorialButton.getText());
                             break;
                         case R.id.decimalButton:
+                            checkEvaluatedState();
                             displayText.append(decimalButton.getText());
                             break;
                         case R.id.plusButton:
@@ -172,33 +174,43 @@ public class MainActivity extends ActionBarActivity {
                             displayText.append("/");
                             break;
                         case R.id.number9Button:
+                            checkEvaluatedState();
                             displayText.append(number9Button.getText());
                             break;
                         case R.id.number8Button:
+                            checkEvaluatedState();
                             displayText.append(number8Button.getText());
                             break;
                         case R.id.number7Button:
+                            checkEvaluatedState();
                             displayText.append(number7Button.getText());
                             break;
                         case R.id.number6Button:
+                            checkEvaluatedState();
                             displayText.append(number6Button.getText());
                             break;
                         case R.id.number5Button:
+                            checkEvaluatedState();
                             displayText.append(number5Button.getText());
                             break;
                         case R.id.number4Button:
+                            checkEvaluatedState();
                             displayText.append(number4Button.getText());
                             break;
                         case R.id.number3Button:
+                            checkEvaluatedState();
                             displayText.append(number3Button.getText());
                             break;
                         case R.id.number2Button:
+                            checkEvaluatedState();
                             displayText.append(number2Button.getText());
                             break;
                         case R.id.number1Button:
+                            checkEvaluatedState();
                             displayText.append(number1Button.getText());
                             break;
                         case R.id.number0Button:
+                            checkEvaluatedState();
                             displayText.append(number0Button.getText());
                             break;
                     }
@@ -217,36 +229,45 @@ public class MainActivity extends ActionBarActivity {
                                 displayText.append(radButton.getText());
                                 break;
                             case R.id.squareRootButton:
+                                checkEvaluatedState();
                                 displayText.append("sqrt(");
                                 break;
                             case R.id.xyButton: // (x^y)
                                 displayText.append("^");
                                 break;
                             case R.id.expButton:
+                                checkEvaluatedState();
                                 displayText.append(expButton.getText());
                                 break;
                             case R.id.lnButton:
+                                checkEvaluatedState();
                                 displayText.append(lnButton.getText());
                                 break;
                             case R.id.eButton:
+                                checkEvaluatedState();
                                 displayText.append(eButton.getText());
                                 break;
                             case R.id.logButton:
+                                checkEvaluatedState();
                                 displayText.append(logButton.getText());
                                 break;
                             case R.id.reciprocalButton:
                                 displayText.setText("1/" + displayText.getText());
                                 break;
                             case R.id.piButton:
+                                checkEvaluatedState();
                                 displayText.append("pi");
                                 break;
                             case R.id.sineButton:
+                                checkEvaluatedState();
                                 displayText.append(sineButton.getText() + "(");
                                 break;
                             case R.id.cosineButton:
+                                checkEvaluatedState();
                                 displayText.append(cosineButton.getText() + "(");
                                 break;
                             case R.id.tangentButton:
+                                checkEvaluatedState();
                                 displayText.append(tangentButton.getText() + "(");
                                 break;
                             case R.id.openParenthesisButton:
@@ -259,6 +280,7 @@ public class MainActivity extends ActionBarActivity {
                                 displayText.setText(displayText.getText().toString().substring(0, displayText.length() - 1));
                                 break;
                             case R.id.answerButton:
+                                checkEvaluatedState();
                                 displayText.append(lastAnswer);
                                 break;
                         }
@@ -282,9 +304,11 @@ public class MainActivity extends ActionBarActivity {
                 String expression = displayText.getText().toString();
                 String result = p.parse(expression);
                 lastAnswer = result;
+                justEvaluated = true;
                 displayText.setText(result);
             }
         });
+
     }
 
     @Override
@@ -307,5 +331,12 @@ public class MainActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void checkEvaluatedState() {
+        if (justEvaluated) {
+            displayText.setText("");
+            justEvaluated = false;
+        }
     }
 }
