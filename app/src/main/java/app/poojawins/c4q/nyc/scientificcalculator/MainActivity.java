@@ -18,7 +18,7 @@ public class MainActivity extends ActionBarActivity {
     Button equalButton;
 
     Button percentButton;
-    Button negativeButton;
+    Button factorialButton;
     Button decimalButton;
 
     Button plusButton;
@@ -66,7 +66,7 @@ public class MainActivity extends ActionBarActivity {
         equalButton = (Button) findViewById(R.id.equalButton);
 
         percentButton = (Button) findViewById(R.id.percentButton);
-        negativeButton = (Button) findViewById(R.id.negativeButton);
+        factorialButton = (Button) findViewById(R.id.factorialButton);
         decimalButton = (Button) findViewById(R.id.decimalButton);
 
         plusButton = (Button) findViewById(R.id.plusButton);
@@ -103,10 +103,10 @@ public class MainActivity extends ActionBarActivity {
         closeParenthesisButton = (Button) findViewById(R.id.closeParenthesisButton);
         answerButton = (Button) findViewById(R.id.answerButton);
 
-        ArrayList<Button> buttons = new ArrayList<>();
+        ArrayList<Button> buttons = new ArrayList<Button>();
 
         buttons.add(percentButton);
-        buttons.add(negativeButton);
+        buttons.add(factorialButton);
         buttons.add(decimalButton);
 
         buttons.add(plusButton);
@@ -126,7 +126,7 @@ public class MainActivity extends ActionBarActivity {
         buttons.add(number0Button);
 
         // scientific calculator specific buttons
-        ArrayList<Button> scientificButtons = new ArrayList<>();
+        ArrayList<Button> scientificButtons = new ArrayList<Button>();
 
         scientificButtons.add(radButton);
         scientificButtons.add(squareRootButton);
@@ -152,8 +152,8 @@ public class MainActivity extends ActionBarActivity {
                         case R.id.percentButton:
                             displayText.append(percentButton.getText());
                             break;
-                        case R.id.negativeButton:
-                            displayText.append("-");
+                        case R.id.factorialButton:
+                            displayText.append(factorialButton.getText());
                             break;
                         case R.id.decimalButton:
                             displayText.append(decimalButton.getText());
@@ -216,7 +216,7 @@ public class MainActivity extends ActionBarActivity {
                                 displayText.append(radButton.getText());
                                 break;
                             case R.id.squareRootButton:
-                                displayText.append("sqrt");
+                                displayText.append("sqrt(");
                                 break;
                             case R.id.xyButton: // (x^y)
                                 displayText.append("^");
@@ -240,13 +240,13 @@ public class MainActivity extends ActionBarActivity {
                                 displayText.append("pi");
                                 break;
                             case R.id.sineButton:
-                                displayText.append(sineButton.getText());
+                                displayText.append(sineButton.getText() + "(");
                                 break;
                             case R.id.cosineButton:
-                                displayText.append(cosineButton.getText());
+                                displayText.append(cosineButton.getText() + "(");
                                 break;
                             case R.id.tangentButton:
-                                displayText.append(tangentButton.getText());
+                                displayText.append(tangentButton.getText() + "(");
                                 break;
                             case R.id.openParenthesisButton:
                                 displayText.append(openParenthesisButton.getText());
@@ -276,8 +276,10 @@ public class MainActivity extends ActionBarActivity {
         equalButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+//                Parser p = new JavaluatorParser();
+                Parser p = new ArityParser();
                 String expression = displayText.getText().toString();
-                String result = Parser.parse(expression);
+                String result = p.parse(expression);
                 displayText.setText(result);
             }
         });
