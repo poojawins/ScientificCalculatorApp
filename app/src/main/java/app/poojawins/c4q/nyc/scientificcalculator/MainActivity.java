@@ -230,11 +230,11 @@ public class MainActivity extends ActionBarActivity {
                         switch (view.getId()) {
                             case R.id.radButton:
                                 checkEvaluatedState();
-                                displayText.append("rad(");
+                                displayText.append("(pi/180)");
                                 break;
                             case R.id.degButton:
                                 checkEvaluatedState();
-                                displayText.append("deg(");
+                                displayText.append("(180/pi)");
                                 break;
                             case R.id.squareRootButton:
                                 checkEvaluatedState();
