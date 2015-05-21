@@ -194,7 +194,7 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/inverseButton"
+                android:id="@+id/reciprocalButton"
                 android:text="@string/inverse"
                 android:textStyle="bold"
                 android:textSize="15sp"

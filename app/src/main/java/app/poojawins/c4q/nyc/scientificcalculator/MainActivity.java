@@ -47,7 +47,7 @@ public class MainActivity extends ActionBarActivity {
     Button lnButton;
     Button eButton;
     Button logButton;
-    Button inverseButton;
+    Button reciprocalButton;
     Button piButton;
     Button sineButton;
     Button cosineButton;
@@ -95,7 +95,7 @@ public class MainActivity extends ActionBarActivity {
         lnButton = (Button) findViewById(R.id.lnButton);
         eButton = (Button) findViewById(R.id.eButton);
         logButton = (Button) findViewById(R.id.logButton);
-        inverseButton = (Button) findViewById(R.id.inverseButton);
+        reciprocalButton = (Button) findViewById(R.id.reciprocalButton);
         piButton = (Button) findViewById(R.id.piButton);
         sineButton = (Button) findViewById(R.id.sineButton);
         cosineButton = (Button) findViewById(R.id.cosineButton);
@@ -136,7 +136,7 @@ public class MainActivity extends ActionBarActivity {
         scientificButtons.add(lnButton);
         scientificButtons.add(eButton);
         scientificButtons.add(logButton);
-        scientificButtons.add(inverseButton);
+        scientificButtons.add(reciprocalButton);
         scientificButtons.add(piButton);
         scientificButtons.add(sineButton);
         scientificButtons.add(cosineButton);
@@ -234,8 +234,8 @@ public class MainActivity extends ActionBarActivity {
                             case R.id.logButton:
                                 displayText.append(logButton.getText());
                                 break;
-                            case R.id.inverseButton:
-                                displayText.append(inverseButton.getText());
+                            case R.id.reciprocalButton:
+                                displayText.setText("1/" + displayText.getText());
                                 break;
                             case R.id.piButton:
                                 displayText.append("pi");
